@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&dkkisplay=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Megrim&display=swap");
+
+/* 1152 */
+@media (max-width: 72rem) {
+    .mood-div {
+        gap: 2vw;
+    }
+    .header-logo {
+        width: 40%;
+    }
+    .header-nav {
+        width: 60%;
+    }
+    .common-headings {
+        font-size: 3.5rem;
+    }
+    .common-sub-headings {
+        font-size: 2rem;
+    }
+    .about-paragraph {
+        font-size: 1.75rem;
+    }
+    .about-button {
+        font-size: 2.5rem;
+    }
+    .about {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .projects-card {
+        width: 22vw;
+    }
+    .projects-cards {
+        justify-content: center;
+        gap: 1vw;
+    }
+    .technology {
+        gap: 4rem;
+    }
+    .techText-text {
+        font-size: 3rem;
+    }
+}
+/* 880 */
+@media (max-width: 55rem) {
+    .mood-title {
+        font-size: 3rem;
+    }
+    .mood-card {
+        height: 80%;
+    }
+    .mood-image {
+        width: 90%;
+    }
+    .header-logo {
+        width: 30%;
+    }
+    .header-image {
+        width: 55%;
+    }
+    .header-nav {
+        width: 70%;
+    }
+    .banner-main-text {
+        font-size: 6rem;
+    }
+    .header-nav-link {
+        font-size: 1.25rem;
+    }
+    .about {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .about-button {
+        align-self: center;
+    }
+    .about-paragraph {
+        font-size: 1.5rem;
+    }
+    .projects-card {
+        height: 70vh;
+        width: 30vw;
+    }
+    .projects-cards {
+        height: 150vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10vh;
+        column-gap: 10vh;
+    }
+    .project-image {
+        width: 25vw;
+    }
+    .technology {
+        gap: 5rem;
+        height: 20rem;
+        width: 100%;
+    }
+    .techText-text {
+        font-size: 3rem;
+    }
+    .footer {
+        height: 70vh;
+    }
+    .footer-lower {
+        height: 55vh;
+    }
+    .footer-logo {
+        width: 50%;
+    }
+    .footer-lower-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        padding-top: 5rem;
+    }
+    .footer-lower-text {
+        text-align: center;
+    }
+}
+/* 640 */
+@media (max-width: 40rem) {
+    .mood-title {
+        font-size: 2.9rem;
+        margin-bottom: 5vh;
+    }
+    .music-box {
+        bottom: 1rem;
+        left: -1rem;
+    }
+    .music-text {
+        font-size: 3rem;
+    }
+    .mood-foot-cred {
+        font-size: 1.5rem;
+    }
+    .full-logo {
+        display: none;
+    }
+    .falcon-logo-one {
+        display: block;
+    }
+    .header-logo {
+        width: 20%;
+    }
+    .header-image {
+        width: 55%;
+    }
+    .header-nav {
+        width: 80%;
+    }
+    .banner-main-text {
+        font-size: 4rem;
+    }
+    .banner-sub-text {
+        font-size: 1.5rem;
+    }
+    .header-nav-link {
+        font-size: 1rem;
+    }
+    .falcon-logo-two {
+        display: none;
+    }
+    .about {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 3rem;
+    }
+    .common-headings {
+        font-size: 3rem;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        font-weight: 400;
+    }
+    .common-sub-headings {
+        font-size: 1.5rem;
+    }
+    .about-button {
+        align-self: center;
+    }
+    .about-paragraph {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .projects-card {
+        width: 45vw;
+        height: 60vh;
+    }
+    .projects-cards {
+        row-gap: 1rem;
+        column-gap: 1rem;
+        /* height: 60vh; */
+    }
+    .projects-div {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .technology {
+        gap: 2rem;
+        height: 10rem;
+        padding-left: 3rem;
+    }
+    .techImage-image {
+        width: 50%;
+    }
+    .techText-text {
+        font-size: 1.75rem;
+    }
+}
+/* 448 */
+@media (max-width: 28rem) {
+    .mood-title {
+        font-size: 2rem;
+        margin-bottom: 5vh;
+    }
+    .mood-div {
+        display: grid;
+        grid-template-rows: 40% 40%;
+        grid-template-columns: 35% 35%;
+        row-gap: 10%;
+        column-gap: 10%;
+    }
+    .mood-name {
+        font-size: 2rem;
+    }
+
+    .mood-foot-cred {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header-nav-one {
+        display: none;
+    }
+    .header-nav-two {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .header {
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .falcon-logo-one {
+        display: none;
+    }
+    .header-nav-two {
+        width: 100%;
+    }
+    .header-nav-link {
+        font-size: 2rem;
+    }
+    .banner-div {
+        top: 25vh;
+        left: 0;
+    }
+    .banner {
+        height: 80vh;
+    }
+    #myVideo {
+        height: 90vh;
+    }
+    .about {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 4rem;
+    }
+    .common-headings {
+        font-size: 2.5rem;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        font-weight: 400;
+    }
+    .common-sub-headings {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .about-button {
+        align-self: center;
+    }
+    .about-paragraph {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+    .projects-cards {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    .projects-card {
+        width: 80vw;
+        height: 50vh;
+    }
+    .project-image {
+        width: 50vw;
+    }
+    .technology {
+        gap: 1rem;
+        height: 12rem;
+        /* padding-left: 3rem; */
+        overflow: visible;
+    }
+    .techImage-image {
+        width: 50%;
+    }
+    .techText-text {
+        font-size: 1.25rem;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    .footer-lower {
+        height: 55vh;
+    }
+    .footer-logo {
+        width: 70%;
+    }
+    .footer-lower-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .footer-lower-text {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .preetam-singh-name {
+        font-size: 1.25rem;
+    }
+    .valorant-name {
+        font-size: 1.25rem;
+    }
+    .footer-lower-contacts {
+        gap: 1rem;
+    }
+    .footer-upper-quote {
+        font-size: 2rem;
+    }
+}

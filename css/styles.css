@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&dkkisplay=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Megrim&display=swap");
+.section-first-ever {
+    width: 100vw;
+    height: 100vh;
+}
+@font-face {
+    font-family: valorantFont;
+    src: url(./../resources/valorantFont/font.ttf);
+}
+.mood {
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+    color: white;
+    display: flex;
+    font-family: "valorantFont", cursive;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 1s 1s;
+    overflow: hidden;
+    gap: 5vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom-left-radius: 10rem;
+}
+.mood-div {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    z-index: 9;
+}
+.mood-card {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s 0.1s;
+    z-index: 9;
+}
+.mood-image {
+    width: 70%;
+}
+.mood-title {
+    font-size: 3rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+.mood-name {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Megrim", cursive;
+    width: 70%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+
+.mood-foot-cred {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+.mood-card:hover {
+    transform: translateY(2rem);
+    transition: all 0.5s 0.1s;
+}
+.mood-foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.select-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid rgb(5, 238, 219);
+}
+.frame {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    /* transform: scale(1.2); */
+}
+
+/* // header */
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    align-items: center;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    outline-offset: 0.5rem;
+    outline-color: white;
+    outline-style: solid;
+    outline-width: 0.5rem;
+}
+
+.header-logo {
+    width: 50%;
+}
+.falcon-logo-one {
+    display: none;
+}
+.falcon-logo-two {
+    display: none;
+}
+.header-image {
+    width: 35%;
+}
+.header-music {
+    position: absolute;
+    top: calc(100vh - 13vh);
+    right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+.header-gif {
+    border-radius: 500px;
+    height: 10vh;
+}
+.header-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-nav-two {
+    display: none;
+}
+.header-nav-link {
+    color: white;
+    font-family: "Rubik", cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.header-nav-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.507);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0.5rem;
+    transition: all 0.2s;
+    padding-top: 0.6rem;
+}
+.header-nav-special {
+    background-color: rgb(252, 70, 70);
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: "valorantFont", cursive;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    padding-top: 0.6rem;
+    transition: all 0.2s;
+}
+.header-nav-special:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 70, 70);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.header-music-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-pause-icon {
+    position: absolute;
+    opacity: 70%;
+    display: none;
+    /* top: 50%;
+    left: 50%; */
+    /* fill: white;
+    color: white; */
+    z-index: 10;
+}
+.header-play-icon {
+    position: absolute;
+    opacity: 70%;
+    /* top: 50%;
+    left: 50%; */
+    /* fill: white;
+    color: white; */
+    z-index: 10;
+}
+.banner {
+    height: 95vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    object-fit: contain;
+    height: 120vh;
+    opacity: 1;
+}
+.banner-div {
+    position: absolute;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 9;
+}
+.banner-sub-text {
+    text-align: center;
+    color: white;
+    font-family: "Rubik", cursive;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.banner-main-text {
+    text-align: center;
+    color: white;
+    font-family: "valorantFont", cursive;
+    font-size: 8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.banner-button {
+    color: white;
+    background-color: rgb(252, 70, 70);
+    font-size: 2rem;
+    padding: 0.75rem;
+    padding-top: 1rem;
+    font-family: "valorantFont", cursive;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline-color: white;
+    outline-width: 1px;
+    outline-offset: 0.5rem;
+    outline-style: solid;
+    transition: all 0.5s;
+}
+.banner-button-link {
+    text-decoration: none;
+    z-index: 9;
+}
+.banner-button-link:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.edge {
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 8;
+}
+.line1 {
+    position: fixed;
+    width: 1px;
+    height: 200vh;
+    left: 5vw;
+    top: 0rem;
+    background-color: white;
+    z-index: 8;
+}
+.line2 {
+    position: fixed;
+    width: 1px;
+    height: 200vh;
+    left: 10vw;
+    top: 0rem;
+    background-color: white;
+    z-index: 8;
+}
+.line3 {
+    position: fixed;
+    width: 1px;
+    height: 200vh;
+    left: 90vw;
+    top: 0rem;
+    background-color: white;
+    z-index: 8;
+}
+.card-link {
+    text-decoration: none;
+    color: white;
+}
+.card-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.about {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem;
+    align-items: right;
+    flex-direction: column;
+    z-index: 9;
+}
+.about-div {
+    z-index: 9;
+}
+.about-paragraph {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    padding-right: 4rem;
+    padding-left: 10rem;
+    text-align: right;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "valorantFont", cursive;
+    font-size: 3rem;
+    width: 20rem;
+    color: white;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 9;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    align-self: end;
+    outline-width: 1px;
+    outline-offset: 0.5rem;
+    outline-style: solid;
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5rem;
+}
+.projects-div {
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+.projects-cards {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projects-card {
+    z-index: 9;
+    height: 100%;
+    width: 18vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    align-items: center;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline-color: white;
+    outline-width: 1px;
+    outline-offset: -0.5rem;
+    outline-style: solid;
+}
+.project-image {
+    width: 16vw;
+}
+.project-image-div {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.link-button {
+    text-decoration: none;
+    font-family: "valorantFont", cursive;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    justify-content: center;
+    width: 60%;
+    outline-width: 1px;
+    outline-offset: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    outline-style: solid;
+    gap: 1rem;
+    transition: all 0.5s;
+}
+.github-button {
+    text-decoration: none;
+    font-family: "valorantFont", cursive;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 60%;
+    outline-width: 1px;
+    outline-offset: 0.5rem;
+    outline-style: solid;
+    gap: 1rem;
+    transition: all 0.5s;
+}
+
+.project-paragraph {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.github-button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.link-button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.technologies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url(./../resources/backgrounds/Background1.png) center/cover no-repeat;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5rem;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    width: 95vw;
+}
+
+.tech-div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.technology {
+    width: 80%;
+    background: url(./../resources/arsenal/Card.png) center/100% 100% no-repeat;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    overflow: hidden;
+    padding-left: 10rem;
+    border-top-right-radius: 100rem;
+    border-bottom-right-radius: 100rem;
+    overflow: hidden;
+    gap: 10rem;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.techImage-image {
+    width: 40%;
+}
+.techText-text {
+    display: block;
+    /* width: 40%; */
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    font-family: "valorantFont", sans-serif;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    outline-color: white;
+    outline-width: 2px;
+    outline-offset: -0.5rem;
+    font-weight: 300;
+    outline-style: solid;
+    /* text-shadow: 0.5px 0.5px black; */
+}
+.technology:hover {
+    transform: translateX(5rem);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.footer {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    overflow: hidden;
+    z-index: 9;
+}
+.footer-upper {
+    height: 15vh;
+    width: 100vw;
+    z-index: 9;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-color: white;
+    outline-width: 2px;
+    outline-offset: -0.5rem;
+    outline-style: solid;
+}
+.footer-lower {
+    height: 35vh;
+    width: 100vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+        url(./../resources/backgrounds/Background1.png) top/cover no-repeat;
+    z-index: 9;
+}
+.footer-upper-quote {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "valorantFont", cursive;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.footer-logo {
+    width: 20%;
+}
+.footer-lower-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 20vh;
+}
+.footer-lower-div {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+}
+.footer-lower-text {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: right;
+}
+.preetam-singh-name {
+    font-family: "valorantFont", sans-serif;
+    color: red;
+    font-size: 1.75rem;
+}
+.valorant-name {
+    font-family: "valorantFont", sans-serif;
+    color: skyblue;
+    font-size: 1.75rem;
+}
+.footer-icon {
+    padding: 1rem;
+    background-color: black;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline-color: white;
+    outline-width: 2px;
+    outline-offset: -0.5rem;
+    outline-style: solid;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.footer-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
